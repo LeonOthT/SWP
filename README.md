@@ -1,1 +1,1 @@
-Tutorial hell is real
+I spent my lunar new year holiday getting stuck in tutorial hell
