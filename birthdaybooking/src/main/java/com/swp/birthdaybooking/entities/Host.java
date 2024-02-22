@@ -15,7 +15,6 @@ import lombok.Setter;
 public class Host {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "host_id")
     private int hostId;
 
