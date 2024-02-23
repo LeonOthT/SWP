@@ -6,6 +6,7 @@ import com.thanhdung.driverapp.entity.Users;
 import com.thanhdung.driverapp.payload.request.SignUpRequest;
 import com.thanhdung.driverapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,6 +15,8 @@ import java.util.List;
 public class LoginService implements LoginServiceImp {
     @Autowired
     UserRepository userRepository;
+    @Autowired
+    PasswordEncoder passwordEncoder;
     @Override
     public List<UserDTO> getAllUsers() {
         List<Users> listUser = userRepository.findAll();
@@ -32,9 +35,8 @@ public class LoginService implements LoginServiceImp {
 
     @Override
     public boolean checkLogin(String fullname, String password) {
-        List<Users> listUsers=userRepository.findByFullnameAndPassword(fullname, password);
-        return listUsers.size() > 0;
-
+        Users user=userRepository.findByFullname(fullname);
+        return passwordEncoder.matches(password,user.getPassword());
     }
 
     @Override
