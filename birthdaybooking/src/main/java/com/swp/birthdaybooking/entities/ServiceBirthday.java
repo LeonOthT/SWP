@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Service {
+public class ServiceBirthday {
 
     @Id
     @Column(name = "service_id")

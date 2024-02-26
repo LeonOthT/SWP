@@ -24,5 +24,5 @@ public class ServiceDetail {
 
     @ManyToOne
     @JoinColumn(name = "service_id", referencedColumnName = "service_id")
-    private Service service;
+    private ServiceBirthday serviceBirthday;
 }

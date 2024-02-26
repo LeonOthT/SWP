@@ -23,7 +23,7 @@ public class Feedback {
 
     @ManyToOne
     @JoinColumn(name = "service_id", referencedColumnName = "service_id")
-    private Service service;
+    private ServiceBirthday serviceBirthday;
 
     @ManyToOne
     @JoinColumn(name = "guest_id", referencedColumnName = "guest_id")
