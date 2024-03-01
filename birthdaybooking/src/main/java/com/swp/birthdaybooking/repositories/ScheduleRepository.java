@@ -4,7 +4,11 @@ import com.swp.birthdaybooking.entities.Schedule;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface ScheduleRepository extends JpaRepository<Schedule, String> {
+import java.util.Date;
+import java.util.Optional;
 
+@Repository
+public interface ScheduleRepository extends JpaRepository<Schedule, Integer> {
+    Optional<Schedule> findByDate(Date date);
+    Optional<Schedule> findByBusy(Boolean busy);
 }

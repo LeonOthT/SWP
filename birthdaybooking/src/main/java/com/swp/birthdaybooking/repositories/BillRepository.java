@@ -4,7 +4,12 @@ import com.swp.birthdaybooking.entities.Bill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface BillRepository extends JpaRepository<Bill, String> {
+import java.util.Optional;
 
+@Repository
+public interface BillRepository extends JpaRepository<Bill, Integer> {
+
+    Optional<Bill> findByBillId(Integer billId);
+
+    Optional<Bill> findByCartId(Integer cartId);
 }
