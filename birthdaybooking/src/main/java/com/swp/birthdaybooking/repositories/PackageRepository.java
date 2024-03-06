@@ -8,7 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface PackageRepository extends JpaRepository<Package, Integer> {
-    Optional<Package> findByPackageId(Integer packageId);
-    Optional<Package> findByName(String name);
-    Optional<Package> findByPrice(Float price);
+
 }

@@ -11,11 +11,6 @@ import java.util.Optional;
 public interface FeedbackRepository extends JpaRepository<Feedback, Integer> {
 
 
-    Optional<Feedback> findByFeedbackId(Integer feedbackId);
-
-    Optional<Feedback> findByGuestId(Integer guestId);
-
-    Optional<Feedback> findByFeedbackDate(Date feedbackDate);
 
 
 }

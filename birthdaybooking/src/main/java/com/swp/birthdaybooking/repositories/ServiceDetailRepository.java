@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface ServiceDetailRepository extends JpaRepository<ServiceDetail, Integer> {
-    Optional<ServiceDetail> findByCartId(Integer cartId);
-    Optional<ServiceDetail> findByServiceId(Integer serviceId);
+
 }

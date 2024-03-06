@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface ScheduleDetailRepository extends JpaRepository<ScheduleDetail, Integer> {
-    Optional<ScheduleDetail> findByScheduleId(Integer scheduleId);
-    Optional<ScheduleDetail> findByHostId(Integer hostId);
+
 }

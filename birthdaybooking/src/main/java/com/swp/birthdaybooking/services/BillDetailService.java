@@ -18,6 +18,7 @@ public class BillDetailService {
         this.billDetailRepository = billDetailRepository;
     }
 
+
     public List<BillDetail> findAll() {
         return billDetailRepository.findAll();
     }

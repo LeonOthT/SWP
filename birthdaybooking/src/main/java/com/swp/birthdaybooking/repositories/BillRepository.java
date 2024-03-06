@@ -9,7 +9,5 @@ import java.util.Optional;
 @Repository
 public interface BillRepository extends JpaRepository<Bill, Integer> {
 
-    Optional<Bill> findByBillId(Integer billId);
 
-    Optional<Bill> findByCartId(Integer cartId);
 }

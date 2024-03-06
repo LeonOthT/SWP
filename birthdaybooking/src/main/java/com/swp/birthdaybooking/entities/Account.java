@@ -14,7 +14,7 @@ import lombok.Setter;
 // Entity is a single instance of a domain object saved into the database as a record.
 // It has some attributes that we represent as columns in our tables.
 @Entity
-@Table(name = "Account")
+@Table(name = "account")
 @Getter
 @Setter
 @NoArgsConstructor

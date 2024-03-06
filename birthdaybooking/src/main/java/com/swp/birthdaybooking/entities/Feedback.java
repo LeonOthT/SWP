@@ -10,7 +10,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "Feedback")
+@Table(name = "feedback")
 @Getter
 @Setter
 @NoArgsConstructor

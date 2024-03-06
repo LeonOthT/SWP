@@ -9,6 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface ScheduleRepository extends JpaRepository<Schedule, Integer> {
-    Optional<Schedule> findByDate(Date date);
-    Optional<Schedule> findByBusy(Boolean busy);
+
 }

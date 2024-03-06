@@ -8,7 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface CartRepository extends JpaRepository<Cart, Integer> {
-    Optional<Cart> findByCartId (Integer cartId);
 
-    Optional<Cart> findByGuestId (Integer guestId);
 }

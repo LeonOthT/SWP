@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface ServiceOfPackageRepository extends JpaRepository<ServiceOfPackage, Integer> {
-    Optional<ServiceOfPackage> findByServiceId(Integer serviceId);
-    Optional<ServiceOfPackage> findByPackageId(Integer packageId);
+
 }
