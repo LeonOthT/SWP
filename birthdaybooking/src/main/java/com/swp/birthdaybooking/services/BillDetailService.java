@@ -13,6 +13,7 @@ public class BillDetailService {
 
     private final BillDetailRepository billDetailRepository;
 
+
     @Autowired
     public BillDetailService(BillDetailRepository billDetailRepository) {
         this.billDetailRepository = billDetailRepository;
@@ -21,5 +22,8 @@ public class BillDetailService {
 
     public List<BillDetail> findAll() {
         return billDetailRepository.findAll();
+    }
+    public void addNewBill(BillDetail billDetail){
+        billDetailRepository.save(billDetail);
     }
 }

@@ -20,4 +20,8 @@ public class ServiceOfPackageService {
     public List<ServiceOfPackage> findAll() {
         return serviceOfPackageRepository.findAll();
     }
+
+    public void addNewServiceOfPackage(ServiceOfPackage serviceOfPackage){
+        serviceOfPackageRepository.save(serviceOfPackage);
+    }
 }

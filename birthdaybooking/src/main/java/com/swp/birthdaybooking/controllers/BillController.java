@@ -3,9 +3,7 @@ package com.swp.birthdaybooking.controllers;
 import com.swp.birthdaybooking.entities.Bill;
 import com.swp.birthdaybooking.services.BillService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +21,11 @@ public class BillController {
     @GetMapping
     public List<Bill> getAllBills() {
         return billService.findAll();
+    }
+
+    @PostMapping
+    public void addNewBill(@RequestBody Bill bill){
+        billService.addNewBill(bill);
     }
 }
 

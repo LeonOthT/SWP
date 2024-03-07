@@ -20,4 +20,8 @@ public class PaymentService {
     public List<Payment> findAll() {
         return paymentRepository.findAll();
     }
+
+    public void addNewPayment(Payment payment){
+        paymentRepository.save(payment);
+    }
 }

@@ -3,9 +3,7 @@ package com.swp.birthdaybooking.controllers;
 import com.swp.birthdaybooking.entities.Package;
 import com.swp.birthdaybooking.services.PackageService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +21,10 @@ public class PackageController {
     @GetMapping
     public List<Package> getAllPackages() {
         return packageService.findAll();
+    }
+
+    @PostMapping
+    public void addNewPackage(@RequestBody Package thisPackage){
+        packageService.addNewPackage(thisPackage);
     }
 }

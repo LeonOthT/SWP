@@ -22,4 +22,8 @@ public class BillService {
         return billRepository.findAll();
     }
 
+    public void addNewBill(Bill bill){
+        billRepository.save(bill);
+    }
+
 }

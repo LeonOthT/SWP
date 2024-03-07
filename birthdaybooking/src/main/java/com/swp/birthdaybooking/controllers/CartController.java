@@ -3,9 +3,7 @@ package com.swp.birthdaybooking.controllers;
 import com.swp.birthdaybooking.entities.Cart;
 import com.swp.birthdaybooking.services.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +21,10 @@ public class CartController {
     @GetMapping
     public List<Cart> getAllCarts() {
         return cartService.findAll();
+    }
+
+    @PostMapping
+    public void addNewCart(@RequestBody Cart cart){
+        cartService.addNewCart(cart);
     }
 }

@@ -20,4 +20,8 @@ public class LocationService {
     public List<Location> findAll() {
         return locationRepository.findAll();
     }
+
+    public void addNewLocation(Location location){
+        locationRepository.save(location);
+    }
 }

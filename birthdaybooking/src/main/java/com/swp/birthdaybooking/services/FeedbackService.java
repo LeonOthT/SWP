@@ -20,4 +20,8 @@ public class FeedbackService {
     public List<Feedback> findAll() {
         return feedbackRepository.findAll();
     }
+
+    public void addNewFeedback (Feedback feedback){
+        feedbackRepository.save(feedback);
+    }
 }

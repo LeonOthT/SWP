@@ -24,4 +24,8 @@ public class ServiceBirthdayService {
     public List<ServiceBirthday> findAll() {
         return serviceBirthdayRepository.findAll();
     }
+
+    public void addNewServiceBirthday(ServiceBirthday serviceBirthday){
+        serviceBirthdayRepository.save(serviceBirthday);
+    }
 }

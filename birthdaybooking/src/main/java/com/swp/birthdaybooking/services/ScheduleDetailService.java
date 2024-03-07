@@ -20,4 +20,8 @@ public class ScheduleDetailService {
     public List<ScheduleDetail> findAll() {
         return scheduleDetailRepository.findAll();
     }
+
+    public void addNewScheduleDetail(ScheduleDetail scheduleDetail){
+        scheduleDetailRepository.save(scheduleDetail);
+    }
 }

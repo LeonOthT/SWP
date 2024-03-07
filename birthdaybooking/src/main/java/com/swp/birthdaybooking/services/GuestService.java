@@ -20,4 +20,8 @@ public class GuestService {
     public List<Guest> findAll() {
         return guestRepository.findAll();
     }
+
+    public void addNewGuest(Guest guest){
+        guestRepository.save(guest);
+    }
 }

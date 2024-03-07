@@ -20,4 +20,8 @@ public class HostService {
     public List<Host> findAll() {
         return hostRepository.findAll();
     }
+
+    public void addNewHost(Host host){
+        hostRepository.save(host);
+    }
 }

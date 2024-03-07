@@ -20,4 +20,8 @@ public class ServiceDetailService {
     public List<ServiceDetail> findAll() {
         return serviceDetailRepository.findAll();
     }
+
+    public void addNewServiceDetail(ServiceDetail serviceDetail){
+        serviceDetailRepository.save(serviceDetail);
+    }
 }

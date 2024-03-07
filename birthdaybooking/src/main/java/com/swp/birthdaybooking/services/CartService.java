@@ -20,4 +20,8 @@ public class CartService {
     public List<Cart> findAll() {
         return cartRepository.findAll();
     }
+
+    public void addNewCart(Cart cart){
+        cartRepository.save(cart);
+    }
 }

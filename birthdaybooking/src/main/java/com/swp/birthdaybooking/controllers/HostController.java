@@ -3,9 +3,7 @@ package com.swp.birthdaybooking.controllers;
 import com.swp.birthdaybooking.entities.Host;
 import com.swp.birthdaybooking.services.HostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +21,10 @@ public class HostController {
     @GetMapping
     public List<Host> getAllHosts() {
         return hostService.findAll();
+    }
+
+    @PostMapping
+    public void addNewHost(@RequestBody Host host){
+        hostService.addNewHost(host);
     }
 }
