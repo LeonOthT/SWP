@@ -27,4 +27,9 @@ public class PackageController {
     public void addNewPackage(@RequestBody Package thisPackage){
         packageService.addNewPackage(thisPackage);
     }
+
+    @PostMapping
+    public void deletePackage(@RequestBody Package thisPackage){
+        packageService.deletePackage(thisPackage);
+    }
 }

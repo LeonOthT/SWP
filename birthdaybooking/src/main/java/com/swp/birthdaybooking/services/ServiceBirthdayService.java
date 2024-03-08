@@ -28,4 +28,8 @@ public class ServiceBirthdayService {
     public void addNewServiceBirthday(ServiceBirthday serviceBirthday){
         serviceBirthdayRepository.save(serviceBirthday);
     }
+
+    public void deleteServiceBirthday(ServiceBirthday serviceBirthday){
+        serviceBirthdayRepository.delete(serviceBirthday);
+    }
 }

@@ -24,4 +24,8 @@ public class PaymentService {
     public void addNewPayment(Payment payment){
         paymentRepository.save(payment);
     }
+
+    public void deletePayment(Payment payment){
+        paymentRepository.delete(payment);
+    }
 }

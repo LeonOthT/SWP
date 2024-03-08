@@ -24,4 +24,8 @@ public class ScheduleService {
     public void addNewSchedule(Schedule schedule){
         scheduleRepository.save(schedule);
     }
+
+    public void deleteSchedule(Schedule schedule){
+        scheduleRepository.delete(schedule);
+    }
 }

@@ -27,4 +27,9 @@ public class GuestController {
     public void addNewGuest(@RequestBody Guest guest){
         guestService.addNewGuest(guest);
     }
+
+    @PostMapping
+    public void deleteGuest(@RequestBody Guest guest){
+        guestService.deleteGuest(guest);
+    }
 }

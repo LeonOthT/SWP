@@ -24,4 +24,8 @@ public class GuestService {
     public void addNewGuest(Guest guest){
         guestRepository.save(guest);
     }
+
+    public void deleteGuest(Guest guest){
+        guestRepository.delete(guest);
+    }
 }

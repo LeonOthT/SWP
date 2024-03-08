@@ -27,4 +27,9 @@ public class FeedbackController {
     public void addNewFeedback(@RequestBody Feedback feedback){
         feedbackService.addNewFeedback(feedback);
     }
+
+    @PostMapping
+    public void deleteFeedback(@RequestBody Feedback feedback){
+        feedbackService.deleteFeedback(feedback);
+    }
 }

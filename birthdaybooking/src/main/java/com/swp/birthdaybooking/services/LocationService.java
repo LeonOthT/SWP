@@ -24,4 +24,8 @@ public class LocationService {
     public void addNewLocation(Location location){
         locationRepository.save(location);
     }
+
+    public void deleteLocation(Location location){
+        locationRepository.delete(location);
+    }
 }

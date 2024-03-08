@@ -27,5 +27,10 @@ public class BillController {
     public void addNewBill(@RequestBody Bill bill){
         billService.addNewBill(bill);
     }
+
+    @PostMapping
+    public void deleteBill(@RequestBody Bill bill){
+        billService.deleteBill(bill);
+    }
 }
 

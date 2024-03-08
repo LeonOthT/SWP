@@ -23,7 +23,11 @@ public class BillDetailService {
     public List<BillDetail> findAll() {
         return billDetailRepository.findAll();
     }
-    public void addNewBill(BillDetail billDetail){
+    public void addNewBillDetail(BillDetail billDetail){
         billDetailRepository.save(billDetail);
+    }
+
+    public void deleteBillDetail(BillDetail billDetail){
+        billDetailRepository.delete(billDetail);
     }
 }

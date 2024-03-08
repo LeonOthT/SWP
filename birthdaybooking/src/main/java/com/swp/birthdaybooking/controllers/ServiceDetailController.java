@@ -27,4 +27,9 @@ public class ServiceDetailController {
     public void addNewServiceDetail(@RequestBody ServiceDetail serviceDetail){
         serviceDetailService.addNewServiceDetail(serviceDetail);
     }
+
+    @PostMapping
+    public void deleteServiceDetail(@RequestBody ServiceDetail serviceDetail){
+        serviceDetailService.deleteServiceDetail(serviceDetail);
+    }
 }

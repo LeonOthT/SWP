@@ -27,4 +27,9 @@ public class PaymentController {
     public void addNewPayment(@RequestBody Payment payment){
         paymentService.addNewPayment(payment);
     }
+
+    @PostMapping
+    public void deletePayment(@RequestBody Payment payment){
+        paymentService.deletePayment(payment);
+    }
 }

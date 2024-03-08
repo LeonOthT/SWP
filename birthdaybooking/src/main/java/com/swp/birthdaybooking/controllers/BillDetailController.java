@@ -25,6 +25,11 @@ public class BillDetailController {
 
     @PostMapping
     public void addNewBillDetail(@RequestBody BillDetail billDetail){
-        billDetailService.addNewBill(billDetail);
+        billDetailService.addNewBillDetail(billDetail);
+    }
+
+    @PostMapping
+    public void deleteBillDetail(@RequestBody BillDetail billDetail){
+        billDetailService.deleteBillDetail( billDetail);
     }
 }

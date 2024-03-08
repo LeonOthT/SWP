@@ -28,4 +28,9 @@ public class AccountController {
     public void addNewAccount(@RequestBody Account account){
         accountService.addNewAccount(account);
     }
+
+    @PostMapping
+    public void deleteAccount(@RequestBody Account account){
+        accountService.deleteAccount(account);
+    }
 }

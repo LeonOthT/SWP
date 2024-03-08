@@ -24,4 +24,8 @@ public class FeedbackService {
     public void addNewFeedback (Feedback feedback){
         feedbackRepository.save(feedback);
     }
+
+    public void deleteFeedback(Feedback feedback){
+        feedbackRepository.delete(feedback);
+    }
 }

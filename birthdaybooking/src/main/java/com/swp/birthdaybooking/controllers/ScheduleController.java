@@ -27,4 +27,9 @@ public class ScheduleController {
     public void addNewSchedule(@RequestBody Schedule schedule){
         scheduleService.addNewSchedule(schedule);
     }
+
+    @PostMapping
+    public void deleteSchedule(@RequestBody Schedule schedule){
+        scheduleService.deleteSchedule(schedule);
+    }
 }

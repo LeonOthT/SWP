@@ -27,4 +27,9 @@ public class ServiceBirthdayController {
     public void addNewServiceBirthday(@RequestBody ServiceBirthday serviceBirthday){
         serviceBirthdayService.addNewServiceBirthday(serviceBirthday);
     }
+
+    @PostMapping
+    public void deleteServiceBirthday(@RequestBody ServiceBirthday serviceBirthday){
+        serviceBirthdayService.deleteServiceBirthday(serviceBirthday);
+    }
 }

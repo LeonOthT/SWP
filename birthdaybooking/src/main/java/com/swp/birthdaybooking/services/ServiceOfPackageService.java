@@ -24,4 +24,8 @@ public class ServiceOfPackageService {
     public void addNewServiceOfPackage(ServiceOfPackage serviceOfPackage){
         serviceOfPackageRepository.save(serviceOfPackage);
     }
+
+    public void deleteServiceOfPackage(ServiceOfPackage serviceOfPackage){
+        serviceOfPackageRepository.delete(serviceOfPackage);
+    }
 }

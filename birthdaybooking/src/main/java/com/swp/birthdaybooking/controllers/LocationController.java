@@ -28,4 +28,9 @@ public class LocationController {
     public void addNewLocation(@RequestBody Location location){
         locationService.addNewLocation(location);
     }
+
+    @PostMapping
+    public void deleteLocation(@RequestBody Location location){
+        locationService.deleteLocation(location);
+    }
 }

@@ -24,4 +24,7 @@ public class HostService {
     public void addNewHost(Host host){
         hostRepository.save(host);
     }
+    public void deleteHost(Host host){
+        hostRepository.delete(host);
+    }
 }

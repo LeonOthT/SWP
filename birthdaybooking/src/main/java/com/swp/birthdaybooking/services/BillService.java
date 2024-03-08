@@ -26,4 +26,8 @@ public class BillService {
         billRepository.save(bill);
     }
 
+    public void deleteBill(Bill bill){
+        billRepository.delete(bill);
+    }
+
 }

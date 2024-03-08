@@ -24,4 +24,8 @@ public class PackageService {
     public void addNewPackage(Package thisPackage){
         packageRepository.save(thisPackage);
     }
+
+    public void deletePackage(Package thisPackage){
+        packageRepository.delete(thisPackage);
+    }
 }

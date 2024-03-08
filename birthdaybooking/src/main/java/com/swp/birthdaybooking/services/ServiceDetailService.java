@@ -24,4 +24,8 @@ public class ServiceDetailService {
     public void addNewServiceDetail(ServiceDetail serviceDetail){
         serviceDetailRepository.save(serviceDetail);
     }
+
+    public void deleteServiceDetail(ServiceDetail serviceDetail){
+        serviceDetailRepository.delete(serviceDetail);
+    }
 }

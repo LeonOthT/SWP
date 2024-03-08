@@ -27,4 +27,8 @@ public class HostController {
     public void addNewHost(@RequestBody Host host){
         hostService.addNewHost(host);
     }
+    @PostMapping
+    public void deleteHost(@RequestBody Host host){
+        hostService.deleteHost(host);
+    }
 }

@@ -28,4 +28,9 @@ public class ServiceOfPackageController {
     public void addNewServiceOfPackage(@RequestBody ServiceOfPackage serviceOfPackage){
         serviceOfPackageService.addNewServiceOfPackage(serviceOfPackage);
     }
+
+    @PostMapping
+    public void deleteServiceOfPackage(@RequestBody ServiceOfPackage serviceOfPackage){
+        serviceOfPackageService.deleteServiceOfPackage(serviceOfPackage);
+    }
 }

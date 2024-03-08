@@ -27,4 +27,9 @@ public class ScheduleDetailController {
     public void addNewScheduleDetail(@RequestBody ScheduleDetail scheduleDetail){
         scheduleDetailService.addNewScheduleDetail(scheduleDetail);
     }
+
+    @PostMapping
+    public void deleteScheduleDetail(@RequestBody ScheduleDetail scheduleDetail){
+        scheduleDetailService.deleteScheduleDetail(scheduleDetail);
+    }
 }

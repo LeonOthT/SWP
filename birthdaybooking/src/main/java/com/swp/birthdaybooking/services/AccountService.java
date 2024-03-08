@@ -22,7 +22,7 @@ public class AccountService {
 
 
     /**
-     * Gets all accounts from the database
+     *
      * @return "a List object containing accounts"
      */
     public List<Account> findAll(){
@@ -31,7 +31,7 @@ public class AccountService {
 
 
     /**
-     * Add a new Account to the database
+     *
      * @param account Account object
      */
     public void addNewAccount(Account account){
@@ -41,6 +41,10 @@ public class AccountService {
         }
         accountRepository.save(account);
         System.out.println(account);
+    }
+
+    public void deleteAccount(Account account){
+        accountRepository.delete(account);
     }
 
 }
