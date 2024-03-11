@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  error :
+    include-message: always
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/driverlicense
+    password: Mysql@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+  jwt:
+    privateKey: T4pXOJweeGTPGP96xXW8fAC4u2TSSKUJR2kiVQqy7bw=
