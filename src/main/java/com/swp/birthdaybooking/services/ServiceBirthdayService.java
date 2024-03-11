@@ -71,7 +71,7 @@ public class ServiceBirthdayService extends BaseService<ServiceBirthday,Integer>
                 .feedbackList(serviceBirthday.getFeedbackList())
                 .imageUrl(serviceBirthday.getImageUrl())
                 .price(serviceBirthday.getPrice())
-                .status(serviceBirthday.isStatus())
+                .status(serviceBirthday.getStatus())
                 .location(serviceBirthday.getLocation())
                 .build();
         return serviceBirthday1;
